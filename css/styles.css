@@ -162,7 +162,12 @@ body {
 
 
 /* section */
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .section-title {
+
     color: var(--primary-text);
 
     font-weight: 700;
@@ -172,7 +177,13 @@ body {
 }
 
 /* features */
+.section.section-features{
+    padding-bottom: 47px;
+}
 .feature-text{
+    margin-top: 0;
+    margin-bottom: 0;
+
     color: var(--secondary-text);
 
     font-weight: 400;
@@ -180,6 +191,8 @@ body {
     line-height: 2;
 }
 .feature{
+    margin-top: 0;
+    margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
