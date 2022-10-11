@@ -32,7 +32,7 @@ body {
 .container{
     margin: 0 auto;
     width: 900px;
-    outline: 2px solid tomato;
+    /* outline: 2px solid tomato; */
 }
 
 /* Logo */
@@ -142,7 +142,7 @@ body {
 
 /* hero */
 .hero{
-    outline: 2px solid tomato;
+    /* outline: 2px solid tomato; */
 
     background-color: var(--secondary-bg);    
     color: var(--white);
@@ -211,12 +211,18 @@ body {
     background-color: var(--secondary-two-bg);
 }
 .team .name{
+    margin-top: 30px;
+    margin-bottom: 10px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
 }
 .team .job{
+    margin-top: 0;
+    margin-bottom: 0;
+
     color: var(--secondary-text);
 
     font-weight: 400;
@@ -225,6 +231,10 @@ body {
     text-align: center;
 }
 .team .employee{
+    width: 270px;
+    border-radius: 0px 0px 4px 4px;
+    padding-bottom: 30px;
+
     background-color: var(--white);
 }
 
