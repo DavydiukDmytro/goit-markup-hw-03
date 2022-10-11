@@ -31,6 +31,8 @@ body {
 /* Контейнер */
 .container{
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
     width: 900px;
     /* outline: 2px solid tomato; */
 }
@@ -266,17 +268,36 @@ footer .logo{
 
 /* page Portfolio */
 
-.portfolio .link{
+/* Nav */
+.portfolio-nav{
+    margin-bottom: 50px;
+}
+
+/* portfolio */
+.portfolio{
+    padding-bottom: 20px;
+    border: 1px solid #EEEEEE;
+    width: 370px;
+}
+.portfolios .link{
     text-decoration: none;
 }
-.portfolio .title{
+.portfolios .title{
+    margin-top: 20px;
+    margin-bottom: 4px;
+    margin-left: 20px;
+
     color: var(--primary-text);
 
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
 }
-.portfolio .description{
+.portfolios .description{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 20px;
+
     color: var(--secondary-text);
     
     font-size: 16px;
