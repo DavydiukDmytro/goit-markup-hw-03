@@ -10,6 +10,7 @@
 :root {
     --primary-bg: #FFFFFF;
     --secondary-bg: #2F303A;
+    --secondary-two-bg: #F5F4FA;
     --primary-text: #212121;
     --secondary-text: #757575;
     --black: #000000;
@@ -18,11 +19,20 @@
 }
 
 body {
+    margin: 0;
+
     background-color: var(--primary-bg);
     color: var(--primary-text);
 
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
+}
+
+/* Контейнер */
+.container{
+    margin: 0 auto;
+    width: 900px;
+    outline: 2px solid tomato;
 }
 
 /* Logo */
@@ -90,28 +100,38 @@ body {
 
 /* button */
 .button{
+    display: inline-block;
+    border-radius: 4px;
+    padding: 6px 22px;
+    border: 1px solid transparent;
+
     color: var(--white);
     background-color: var(--accent);
+
+
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
-    line-height: 1.87;  
+    line-height: 1.88;  
     letter-spacing: 0.06em;
+}
+.button.primary{
+    padding: 10px 32px;
 }
 .button:hover, .button:focus{
     color: var(--primary-text);
     background-color: var(--white);
 }
-.secondary-button{
+.button.secondary{
     color: var(--primary-text);
-    background-color: var(--white);
+    background-color: var(--secondary-two-bg);
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     letter-spacing: 0.03em;
 }
-.secondary-button:hover, .secondary-button:focus, .activ{
+.button.secondary:hover, .button.secondary:focus, .secondary.activ{
     color: var(--white);
     background-color: var(--accent);
 }
@@ -163,7 +183,7 @@ body {
 
 /* our team */
 .teams{
-    background-color: #F5F4FA;
+    background-color: var(--secondary-two-bg);
 }
 .team .name{
     font-weight: 500;
