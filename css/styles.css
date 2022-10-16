@@ -233,6 +233,9 @@ body {
 .features {
     display: flex;
 }
+.features .item{
+    width: calc((100% - 90px) / 3);
+}
 .features .item:not(:last-child){
     margin-right: 30px;
 }
@@ -245,7 +248,7 @@ body {
 
     font-weight: 400;
     font-size: 14px;
-    line-height: 2;
+    line-height: 1.71;
 }
 .feature{
     margin-top: 0;
@@ -324,8 +327,11 @@ footer .logo{
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 2;
+    line-height: 1.71;
     text-decoration: none;
+}
+.footer-nav .item:not(:last-child){
+    margin-bottom: 9px;
 }
 .footer-nav .link:hover, .footer-nav .link:focus{
     color:var(--accent);
@@ -361,9 +367,9 @@ footer .logo{
     width: calc(100% / 3 - var(--portfolio-margin));
     margin-left: var(--portfolio-margin);
     margin-top: var(--portfolio-margin);
-    padding-bottom: 20px;
 }
 .portfolio-descr{
+    padding: 20px 24px;
     border: 1px solid #EEEEEE;
 }
 /* .portfolio:nth-child(3n){
@@ -377,9 +383,8 @@ footer .logo{
     text-decoration: none;
 }
 .portfolios .title{
-    margin-top: 20px;
+    margin-top: 0;
     margin-bottom: 4px;
-    margin-left: 20px;
 
     color: var(--primary-text);
 
@@ -390,7 +395,6 @@ footer .logo{
 .portfolios .description{
     margin-top: 0;
     margin-bottom: 0;
-    margin-left: 20px;
 
     color: var(--secondary-text);
     
