@@ -362,6 +362,8 @@ footer .logo{
     margin-left: var(--portfolio-margin);
     margin-top: var(--portfolio-margin);
     padding-bottom: 20px;
+}
+.portfolio-descr{
     border: 1px solid #EEEEEE;
 }
 /* .portfolio:nth-child(3n){
