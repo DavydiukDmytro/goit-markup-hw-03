@@ -130,7 +130,8 @@ body {
     margin-left: auto;
 }
 .feedback-nav .link{
-    display: block;
+    display: flex;
+    align-items: center;
     padding: 32px 0;
     color: var(--secondary-text);
 
@@ -139,6 +140,22 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
+}
+.feedback-nav .svg{
+    fill: var(--secondary-text);
+    margin-right: 10px;
+}
+.svg.envelope{
+    width: 16px;
+    height: 12px;
+}
+.svg.smartphone{
+    width: 10px;
+    height: 16px;
+}
+.feedback-nav .link:hover .svg,
+.feedback-nav .link:focus .svg{
+    fill: var(--accent);
 }
 
 .feedback-nav .link:hover,
